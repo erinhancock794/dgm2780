@@ -253,7 +253,7 @@ h1,h2,h3,h4 {
 	margin-left: 10px;;
 	display: grid;
 	align-items: center;
-	grid-template-columns: repeat(3, .3fr);
+	grid-template-columns: repeat(4, .3fr);
 	grid-auto-rows: minmax(100px, auto);
 	row-gap: .5em;
 	column-gap: 1px; 
