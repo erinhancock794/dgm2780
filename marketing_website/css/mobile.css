@@ -3,6 +3,11 @@
    License: none (public domain)
 */
 
+/* * {-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; box-sizing: border-box;} */
+
+    @media screen and (max-width: 499px) {
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,30 +55,18 @@ table {
 /* Start your code here: */
 html {
 	font-size: 62.5%;
-	background: url(../images/backgroundimg.jpg) fixed;
-	background-repeat:no-repeat;
-	background-position: center;
-	background-size: cover;
 }
 
 .container {
-	max-width: 800px;
+	max-width: 100%;
 	margin: 0 auto;
 	font-size: 2rem;
-	color: white;
+	color: red;
 	
-	background: url("../images/background.png") fixed;
+    background: url("../images/background.png") fixed;
 	background-position: center; 
-	background-origin: border-box;
 	background-repeat: repeat-y;
-	box-shadow:  0px 10px 50px black;
 
-}
-#background-img{
-	width: 100vw;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    display: block;
 }
 
 header{
@@ -82,6 +75,10 @@ header{
 	display: flex;
 	justify-content: center;
 }
+
+ 
+
+
 /*navigation*/
 .navbar, .cart, .sidebar{
 	font-family: 'Courier New', Courier, monospace;
@@ -90,6 +87,7 @@ header{
 	
 	
 }
+
 a{
 	text-decoration: none;
 }
@@ -110,60 +108,55 @@ a:active{
 .navbar ul {
 	display: flex;
 	justify-content: space-around;
-	padding-right: 10px;
 	
 }
 
 .navbar ul li{
-	padding: 10px 10px 10px 0;
+	padding: 10px 0px 10px 0;
 	
 
 }
-
 .navbar2{
 	display:flex;
 	flex-direction: row;
-	padding-right: 15px;
+	justify-content: end;
+	align-items: center;
+
+	/* padding: 10px; */
 	background-color: rgb(104, 97, 97);
 }
 .cart{
 	display: flex;
+	padding: 0 5% 0 5%;
 	flex-direction: row;
-	align-items: center;
 	background-color: rgb(104, 97, 97);
 }
 .cart li{
-	margin: 10px;
-	/* padding: 2% 2% 2% 0; */
+	font-size: 14px;
+	/* margin: 10px; */
+	padding: 0 0 0 4%;
+
 }
 input[type=text]{
 	color:rgb(77, 64, 46);
 	font-family: 'Courier New', Courier, monospace;
-	font-size: 14px;
+	/* font-size: 14px; */
 }
 input{
 	background-color: rgb(177, 177, 177);
-	width: 300px;
+	width: 90%;
 	padding-left: 10px;
 	height: 30px;
 	border: 1px solid white;
 
 }
 .search-container button{
-	width: 40px;
-	height: 34px;;
+    width: 5%;
+    height: 5%;
 	color: rgb(77, 64, 46);
 	position: absolute;
 	cursor: pointer;
 	border: none;
-}
-.search-container button:hover{
-	background-color: rgb(77, 64, 46);
-	color: white;
-	size: 100;
-	position: absolute;
-	cursor: pointer;
-	border: 1px solid white;
 }
 
 .search-container{
@@ -176,17 +169,8 @@ input{
 
 /*sidebar*/
 .sidebar{
-	max-width: 125px;
-	text-align: center;
-	box-shadow: -10px 10px rgb(0,0,0,0.6);
-	float: right;
-	position: fixed;
-	/* z-index: 10; */
-	background-color: rgb(155, 120, 98);
-	bottom: 50%;
-	right: 0;
-	position: fixed;
-	z-index: 3000;
+
+    display: none;
 }
 .sidebar ul li{
 	padding: 10px;
@@ -195,43 +179,11 @@ input{
 }
 
 /*slideshow*/
-.slideshow {
-	/* position: relative;
-	margin: auto;
-	float: left; */
-	
-  }
+
   .mySlides {
-	width: 800px;
-
-	/* position: relative; */
-  }
-.mySlides img{
-	animation-direction: alternate;
-}
-  .prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -22px;
-	padding: 16px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 60%;
-	user-select: none;
-	background-color: rgb(90,4,4,0.8);
-  }
-  .next {
-	right: 0;
+	width: 100%;
   }
 
-  .prev:hover, .next:hover {
-	background-color: rgb(1,1,1,0.8);
-	border-radius: 60%;
-  }
 
 /*main content*/
 .main-content, footer {
@@ -258,26 +210,17 @@ h1,h2,h3,h4 {
 }
 
 .bestsellers{
-	margin-left: 10px;;
-	display: grid;
-	align-items: center;
-	grid-template-columns: repeat(4, .3fr);
-	grid-auto-rows: minmax(100px, auto);
-	row-gap: .5em;
-	column-gap: 1px; 
+	margin: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
 }
 figure {
-	/* justify-items: center; */
-	/* align-items: start; */
-	/* display: flex; */
-	/* grid-row-start: 1; */
-/* grid-row-end: 3; */
-
+align-self: center;
+margin-bottom: 5px;
 
 }
 figure img{
-	max-width: 150px;
-	/* align-self: center; */
+	max-width: 250px;
 }
 
 
@@ -287,3 +230,4 @@ footer{
 	padding: 8px;
 
 }
+    }
