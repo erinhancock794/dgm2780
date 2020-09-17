@@ -61,12 +61,16 @@ html {
 	max-width: 100%;
 	margin: 0 auto;
 	font-size: 2rem;
-	color: red;
+	color: white;
 	
     background: url("../images/background.png") fixed;
 	background-position: center; 
 	background-repeat: repeat-y;
 
+}
+.container header h1{
+	font-size: 80px;
+	text-align: center;
 }
 
 header{
@@ -82,10 +86,8 @@ header{
 /*navigation*/
 .navbar, .cart, .sidebar{
 	font-family: 'Courier New', Courier, monospace;
-	background-color: rgb(77, 64, 46);
+	background-color: rgba(36, 29, 20, 0.7);
 	color:white;
-	
-	
 }
 
 a{
@@ -123,13 +125,13 @@ a:active{
 	align-items: center;
 
 	/* padding: 10px; */
-	background-color: rgb(104, 97, 97);
+	background-color: rgba(66, 61, 61, 0.6);
 }
 .cart{
 	display: flex;
 	padding: 0 5% 0 5%;
 	flex-direction: row;
-	background-color: rgb(104, 97, 97);
+	background-color: rgb(104, 97, 97, 0);
 }
 .cart li{
 	font-size: 14px;
