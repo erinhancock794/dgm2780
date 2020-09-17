@@ -90,17 +90,13 @@ header{
 	color:white;
 }
 
-a{
+a, a:visited {
 	text-decoration: none;
-}
-
-
-a:visited{
 	color: white;
-
 }
+
 a:hover{
-	background-color: green;
+	background-color: rgb(98, 194, 133);
 	padding: 10px;
 }
 a:active{
@@ -123,8 +119,6 @@ a:active{
 	flex-direction: row;
 	justify-content: end;
 	align-items: center;
-
-	/* padding: 10px; */
 	background-color: rgba(66, 61, 61, 0.6);
 }
 .cart{
@@ -135,14 +129,12 @@ a:active{
 }
 .cart li{
 	font-size: 14px;
-	/* margin: 10px; */
 	padding: 0 0 0 4%;
 
 }
 input[type=text]{
 	color:rgb(77, 64, 46);
 	font-family: 'Courier New', Courier, monospace;
-	/* font-size: 14px; */
 }
 input{
 	background-color: rgb(177, 177, 177);
