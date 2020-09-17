@@ -11,5 +11,6 @@ Website must have a breakpoint for mobile devices at 500px.
 
 Submit content via git.
 
+Website URL: https://quirky-bartik-33f52b.netlify.app/marketing_website/
 
 Website Mimic: https://www.skylightbooks.com/
