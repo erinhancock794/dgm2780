@@ -107,11 +107,11 @@ a:visited{
 	color: white;
 
 }
-a:hover{
+.navbar a:hover{
 	background-color: rgb(98, 194, 133);
 	padding: 5px;
 }
-a:active{
+.navbar a:active{
 	color: red;
 }
 
@@ -149,12 +149,12 @@ a:active{
 	padding: 0 2% 0 4%;
 
 }
-input[type=text]{
+.search-container input[type=text]{
 	color:rgb(77, 64, 46);
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 14px;
 }
-input{
+.search-container input{
 	background-color: rgb(177, 177, 177);
 	width: 300px;
 	padding-left: 10px;
@@ -162,7 +162,7 @@ input{
 	border: 1px solid white;
 
 }
-.search-container button{
+.navbar2 .search-container button{
 	width: 3%;
 	height: 34px;
 	color: rgb(77, 64, 46);
@@ -239,8 +239,86 @@ h1,h2,h3,h4 {
 	margin: 20px 0 0 10px;
 }
 
+/*Subscribe*/
+  
+  .subscribe{
+	width: 400px;
+	border-radius: 10px;
+	background: rgba(36, 29, 20);
+	box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  }
+	.form-title{
+	  width: 100%;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  height: 80px;
+	  font-size: 20px;
+	  font-weight: bold;
+	  background: rgb(98, 194, 133);
+	  border-radius: 10px 10px 0 0;
+	}
+	
+	.form-body{
+	  padding: 10px;
+	}
+	  .row{
+		display: flex;
+		justify-content: space-evenly;
+		padding: 10px;
+	  }
 
- .subscribe input[type=text]  {
+	.row input[type="text"]{
+		  appearance: none;
+		  width: 90%;
+		  margin: 0 10px;
+		  height: 35px;
+		  border-radius: 5px;
+		  outline: none;
+		  border: none;
+		  background: #e8ebed;
+		  color: #576366;
+		  font-size: 14px;
+		}
+	  
+
+	
+	.rule{
+	  height: 2px;
+	  background: #e8ebed;
+	  margin: 0px 35px;
+	}
+	
+	.form-footer{
+	  margin: 0 25px 15px 25px;
+	  padding: 15px 10px;
+	  align-self: center;
+	}
+	  
+	.subscribe a{
+		display: inline-block;
+		height: 40px;
+		line-height: 40px;
+		border: none;
+		border-radius: 5px;
+		padding: 5px 15px;
+		background: rgb(98, 194, 133);
+		font-size: 14px;
+	  }
+	  
+
+	  .subscribe a:hover{
+		  cursor: pointer;
+		  background-color: rgb(73, 150, 101)
+	  }
+	
+  
+  
+
+
+
+
+ /* .subscribe input[type=text]  {
 	width: 80%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -260,7 +338,6 @@ h1,h2,h3,h4 {
 	width: 30%;
 	background-color: rgb(36, 29, 20);;
 	color: white;
-	/* padding: 14px 20px; */
 	margin: 8px 0;
 	border: none;
 	border-radius: 4px;
@@ -272,7 +349,6 @@ h1,h2,h3,h4 {
   }
   form{
 	  display: flex;
-	  /* justify-content: start; */
 	  flex-direction: column;
 	  padding: 5px;
 	  margin: 2px;
@@ -283,9 +359,6 @@ h1,h2,h3,h4 {
 	padding-top: 22px;
   }
   .subscribe {
-	  /* display: flex; */
-	  /* flex-direction: column; */
-	  /* justify-content: center; */
 	  width: 40%;
 	border-radius:5px;
 	background-color: white;
@@ -298,7 +371,7 @@ h1,h2,h3,h4 {
   #sub_details {
 	  padding: 5px 5px 0 5px;
 	  font-size: 1.5rem;
-  }
+  } */
 
 .bestsellers{
 	margin-left: 5%;
@@ -324,39 +397,3 @@ footer{
 }
 
 
-.dropbtn {
-	background-color: #4CAF50;
-	color: white;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-  }
-  
-  .dropdown {
-	position: relative;
-	display: inline-block;
-  }
-  
-  .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-  }
-  
-  .dropdown-content a {
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-}
